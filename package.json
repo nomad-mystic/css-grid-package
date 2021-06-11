@@ -4,7 +4,9 @@
   "description": "This is a flexbox grid package",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "development": "webpack --config=webpack.config.js",
+    "production": "webpack --config=webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -21,10 +23,13 @@
     "@babel/core": "^7.14.5",
     "autoprefixer": "^10.2.6",
     "cssnano": "^5.0.6",
+    "file-loader": "^6.2.0",
     "mini-css-extract-plugin": "^1.6.0",
     "postcss-loader": "^6.1.0",
     "postcss-scss": "^3.0.5",
     "sass": "^1.34.1",
-    "sass-loader": "^12.1.0"
+    "sass-loader": "^12.1.0",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2"
   }
 }
