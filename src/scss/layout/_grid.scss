@@ -1,0 +1,25 @@
+@use 'sass:math' as math;
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+// Number of columns
+$columns: 12;
+
+[class^='col-'] {
+	flex-basis: 100%;
+}
+
+@media screen and (min-width: 960px) {
+	@for $i from 1 through 12 {
+		.col-#{$i} {
+			flex: 0 0 math.div(100%, ($columns / $i));
+		}
+
+		.col-offset-#{$i} {
+			margin-left: math.div(100%, ($columns / $i));
+		}
+	}
+}

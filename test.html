@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Test HTML Files</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        div[class*="col"] {
+            background: lightblue;
+            height: 40px;
+            border: 1px solid darkblue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="row">
+    <div class="col-12">12</div>
+    <div class="col-10">10</div>
+    <div class="col-2">2</div>
+    <div class="col-8">8</div>
+    <div class="col-4">4</div>
+    <div class="col-6">6</div>
+    <div class="col-6">6</div>
+    <div class="col-6">4</div>
+    <div class="col-4 col-offset-1">4</div>
+</div>
+
+
+</body>
+</html>
