@@ -1,5 +1,5 @@
 {
-  "name": "@nomad-mystic/css-grid-package",
+  "name": "@nomadmystic/css-grid-package",
   "version": "1.0.2",
   "description": "This is a flexbox grid package",
   "main": "index.js",
