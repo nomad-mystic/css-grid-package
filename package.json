@@ -1,12 +1,12 @@
 {
   "name": "@nomad-mystic/css-grid-package",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a flexbox grid package",
   "main": "index.js",
   "scripts": {
     "test": "exit 0",
-    "development": "webpack --config=webpack.config.js",
-    "production": "webpack --config=webpack.config.js"
+    "development": "webpack --config=webpack.config.js --mode=development",
+    "production": "webpack --config=webpack.config.js --mode=production && rm ./css/main.scss"
   },
   "repository": {
     "type": "git",
@@ -19,17 +19,17 @@
   },
   "homepage": "https://github.com/nomad-mystic/css-grid-package#readme",
   "devDependencies": {
-    "@babel/cli": "^7.14.5",
-    "@babel/core": "^7.14.5",
-    "autoprefixer": "^10.2.6",
-    "cssnano": "^5.0.6",
+    "@babel/cli": "^7.22.10",
+    "@babel/core": "^7.22.10",
+    "autoprefixer": "^10.4.15",
+    "cssnano": "^5.1.15",
     "file-loader": "^6.2.0",
-    "mini-css-extract-plugin": "^1.6.0",
-    "postcss-loader": "^6.1.0",
+    "mini-css-extract-plugin": "^1.6.2",
+    "postcss-loader": "^6.2.1",
     "postcss-scss": "^3.0.5",
-    "sass": "^1.34.1",
-    "sass-loader": "^12.1.0",
-    "webpack": "^5.38.1",
-    "webpack-cli": "^4.7.2"
+    "sass": "^1.65.1",
+    "sass-loader": "^12.6.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^4.10.0"
   }
 }

@@ -15,11 +15,11 @@ $columns: 12;
 @media screen and (min-width: 960px) {
 	@for $i from 1 through 12 {
 		.col-#{$i} {
-			flex: 0 0 math.div(100%, ($columns / $i));
+			flex: 0 0 math.div(100%, calc($columns / $i));
 		}
 
 		.col-offset-#{$i} {
-			margin-left: math.div(100%, ($columns / $i));
+			margin-left: math.div(100%, calc($columns / $i));
 		}
 	}
 }

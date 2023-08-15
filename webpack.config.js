@@ -7,7 +7,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'css'),
-    filename: '[name].scss'
+    filename: '[name].scss',
   },
   module: {
     rules: [
@@ -33,7 +33,6 @@ module.exports = {
           {
             loader: 'sass-loader',
             options: {
-              // Prefer `dart-sass`
               implementation: require('sass'),
             },
           },
